@@ -1,0 +1,11 @@
+body {
+  font-family: "Inter", sans-serif;
+}
+
+button {
+  transition: transform 0.1s ease-in-out;
+}
+
+button:hover {
+  transform: translateY(-2px);
+}

@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="pt-PT">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Testes de Funcionalidades JavaScript</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="./index.js"></script>
+    <link rel="stylesheet" href="./index.css" />
+  </head>
+  <body class="bg-gray-50 text-gray-800">
+    <div class="container mx-auto p-8 max-w-4xl">
+      <header class="text-center mb-10">
+        <h1 class="text-4xl font-bold text-gray-900">
+          Painel de Testes JavaScript
+        </h1>
+        <p class="text-lg text-gray-600 mt-2">
+          Uma coleção de testes interativos para explorar funcionalidades do JS.
+        </p>
+      </header>
+      <main class="grid grid-cols-1 md:grid-cols-2 gap-8">
+        <!-- Os nossos testes serão adicionados aqui -->
+
+        <!-- Teste 1: Manipulação do DOM -->
+        <div class="bg-white p-6 rounded-xl shadow-sm border border-gray-200">
+          <h2 class="text-2xl font-semibold mb-4 border-b pb-2">
+            1. Manipulação do DOM
+          </h2>
+          <p id="text-to-change" class="mb-4 p-3 bg-gray-100 rounded-md">
+            Este texto vai mudar.
+          </p>
+          <div class="flex flex-wrap gap-2">
+            <button
+              id="change-text-btn"
+              class="bg-blue-500 text-white px-4 py-2 rounded-lg font-medium"
+            >
+              Alterar Texto
+            </button>
+            <button
+              id="change-style-btn"
+              class="bg-teal-500 text-white px-4 py-2 rounded-lg font-medium"
+            >
+              Alterar Estilo
+            </button>
+          </div>
+        </div>
+        <!-- Teste 1: FIM -->
+
+        <!-- Teste 2: Eventos do Utilizador -->
+        <div class="bg-white p-6 rounded-xl shadow-sm border border-gray-200">
+          <h2 class="text-2xl font-semibold mb-4 border-b pb-2">
+            2. Eventos do Utilizador
+          </h2>
+          <div
+            id="mouse-box"
+            class="h-24 bg-gray-100 rounded-md flex items-center justify-center cursor-pointer mb-4 select-none"
+          >
+            Passe o rato aqui
+          </div>
+          <p class="text-sm text-gray-600">
+            Pressione uma tecla para ver o seu código:
+          </p>
+          <p
+            class="text-lg font-mono p-2 bg-gray-800 text-white rounded-md mt-1 h-10 flex items-center"
+            id="key-pressed-output"
+          ></p>
+        </div>
+        <!-- Teste 2: FIM -->
+
+        <!-- Teste 3: JavaScript Assíncrono -->
+        <div
+          class="bg-white p-6 rounded-xl shadow-sm border border-gray-200 md:col-span-2"
+        >
+          <h2 class="text-2xl font-semibold mb-4 border-b pb-2">
+            3. JavaScript Assíncrono (Fetch API)
+          </h2>
+          <p class="mb-4">
+            Clique para buscar uma lista de utilizadores de uma API pública.
+          </p>
+          <button
+            id="fetch-data-btn"
+            class="bg-indigo-500 text-white px-4 py-2 rounded-lg font-medium"
+          >
+            Buscar Dados
+          </button>
+          <div
+            id="api-data"
+            class="mt-4 p-4 bg-gray-50 border rounded-md min-h-[100px]"
+          >
+            Os dados da API aparecerão aqui...
+          </div>
+        </div>
+        <!-- Teste 3: FIM -->
+      </main>
+    </div>
+    <script>
+      // O nosso código JavaScript virá aqui!
+    </script>
+  </body>
+</html>
