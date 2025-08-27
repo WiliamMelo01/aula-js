@@ -7,7 +7,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
   changeText(changeTextBtn, textToChange);
   changeStyle(textToChange);
-  getMouseNadKeyboardEvents();
+  getMouseAndKeyboardEvents();
   fetchData();
 });
 
@@ -27,7 +27,7 @@ function changeStyle(textToChange) {
   });
 }
 
-function getMouseNadKeyboardEvents() {
+function getMouseAndKeyboardEvents() {
   const mouseBox = document.getElementById("mouse-box");
   mouseBox.addEventListener("mouseover", () => {
     mouseBox.textContent = "O rato entrou!";
